@@ -6,3 +6,11 @@
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 
 // Solution:
+function smash(words) {
+
+    return words.join(" ");
+
+};
+console.log(smash(["hello", "world"]));
+console.log(smash(["hello"]));
+console.log(smash(["this", "is", "a", "really", "long", "sentence"]));
