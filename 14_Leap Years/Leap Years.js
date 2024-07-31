@@ -8,3 +8,22 @@
 
 // Solution:
 
+function isLeapYear(year) {
+    let ost4 = year % 4;
+    let ost100 = year % 100;
+    let ost400 = year % 400;
+    if (ost4 === 0 && ost100 !== 0) {
+        return true;
+    }
+    if (ost100 === 0 && ost400 !== 0) {
+        return false;
+    }
+    if (ost4 !== 0 && ost400 !== 0) {
+        return false;
+    }
+    if (ost4 === 0 && ost400 === 0) {
+        return true;
+    }
+}
+console.log(isLeapYear(3126));
+console.log(isLeapYear(2024));
