@@ -8,3 +8,8 @@
 // -34: 34
 
 // Solution:
+function opposite(number) {
+    return (-number);
+}
+console.log(opposite(4.25));
+console.log(opposite(-5));
