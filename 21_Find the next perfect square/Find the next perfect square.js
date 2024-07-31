@@ -12,3 +12,17 @@
 // 114 --> -1  #  because 114 is not a perfect square
 
 // Solution:
+function findNextSquare(sq) {
+    let a = Math.sqrt(sq);
+    if (!Number.isInteger(a)) {
+    return -1;}
+    else {
+        a += 1;
+        let nextSqrt = a*a;
+        return nextSqrt;
+
+    }
+    
+  }
+  console.log(findNextSquare(625));
+  console.log(findNextSquare(114));
