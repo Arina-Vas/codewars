@@ -10,3 +10,15 @@
 // The string has a length greater or equal to one and contains only letters from ato z.
 
 // Solution:
+function printerError(s) {
+    let str = "abcdefghijklm"
+    let error = 0;
+    for (let i = 0; i < s.length; i++) {
+        a = str.includes(s[i]);
+        if (a == false) {
+           error++};
+    }
+    return error + '/' + s.length;
+}
+console.log(printerError("aaabbbbhaijjjm"));
+console.log(printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"));
