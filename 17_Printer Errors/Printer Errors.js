@@ -15,6 +15,7 @@ function printerError(s) {
     let error = 0;
     for (let i = 0; i < s.length; i++) {
         a = str.includes(s[i]);
+        // if (!str.includes(s[i])) 
         if (a == false) {
            error++};
     }
