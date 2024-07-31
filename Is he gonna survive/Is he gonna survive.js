@@ -4,3 +4,11 @@
 // Return true if yes, false otherwise :)
 
 // Solution:
+function hero(bullets, dragons){
+
+    return dragons * 2 <= bullets;
+    
+    }
+    
+    console.log(hero(5, 2));
+    console.log(hero(5, 6));
