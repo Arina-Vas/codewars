@@ -6,3 +6,8 @@
 // 5, "Hello" -> "HelloHelloHelloHelloHello"
 
 // Solution: 
+function repeatStr (n, s) {
+    return s.repeat(n);
+  }
+  console.log(repeatStr(5, 'U'));
+  console.log(repeatStr(3, "hello"));
