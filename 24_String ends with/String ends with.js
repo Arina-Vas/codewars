@@ -7,3 +7,11 @@
 
 // Solution:
 
+function solution(str, ending){
+    let end = str.endsWith(ending);
+    return end;
+  
+}
+console.log(solution('abcd', 'bcd'));
+console.log(solution('abcd', 'cd'));
+console.log(solution('abcd', 'ab'));
