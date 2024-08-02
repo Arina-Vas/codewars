@@ -11,3 +11,9 @@
 // Note: for this kata y isn't considered a vowel.
 
 // Solution:
+function disemvowel(str) {
+    const exc = /[aeiou]/gi;;
+    return str.replace(exc, '');
+}
+console.log(disemvowel("Hello World!!!"));
+console.log(disemvowel("Hi! Hello!"));
