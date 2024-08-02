@@ -11,3 +11,13 @@
 // countBy(2,5) === [2,4,6,8,10]
 
 // Solution:
+
+function countBy(x, n) {
+    let res = [];
+    for (let i = 1; i <= n; i++) {
+        res.push(x * i);
+    }
+    return res;
+}
+console.log(countBy(2, 5));
+console.log(countBy(7, 9));
