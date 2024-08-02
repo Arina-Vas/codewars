@@ -27,5 +27,5 @@ var isSquare = function (n) {
     return Number.isInteger(a);
 
 }
-console.log(perfectSquare(3));
-console.log(perfectSquare(4));
+console.log(isSquare(3));
+console.log(isSquare(4));
