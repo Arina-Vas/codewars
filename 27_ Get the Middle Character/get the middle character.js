@@ -19,3 +19,20 @@
 // The middle character(s) of the word represented as a string.
 
 // Solution:
+
+function getMiddle(s) {
+    let a = s.length % 2;
+    if (a == 0) {
+        let symb1 = s[(s.length / 2) - 1];
+        let symb2 = s[s.length / 2];
+        return (symb1 + symb2);
+    }
+    else {
+        let b = Math.floor(s.length / 2);
+        return symb3 = s[b];
+    }
+}
+
+
+console.log(getMiddle("Arina"));
+console.log(getMiddle("Alex"));
