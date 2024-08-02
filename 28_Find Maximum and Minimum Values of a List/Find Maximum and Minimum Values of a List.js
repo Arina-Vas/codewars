@@ -10,3 +10,31 @@
 // You may consider that there will not be any empty arrays/vectors.
 
 // Solution:
+var min = function (list) {
+    var min1 = list[0];
+    for (i = 1; i < list.length; i++) {
+
+
+        if (min1 > list[i]) {
+            min1 = list[i];
+
+        }
+    }
+
+    return min1;
+}
+var max = function (list) {
+    var max1 = list[0];
+    for (j = 1; j < list.length; j++) {
+
+        if (max1 < list[j]) {
+            max1 = list[j];
+
+        }
+    }
+
+    return max1;
+}
+
+console.log(min([9, 1, 2, 5, 7, 8, 0, 4, 56]));
+console.log(max([9, 1, 2, 5, 7, 8, 0, 4, 56]));
