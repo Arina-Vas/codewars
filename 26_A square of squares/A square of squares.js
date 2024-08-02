@@ -21,3 +21,11 @@
 
 // Solution:
 
+var isSquare = function (n) {
+    let a = Math.sqrt(n);
+
+    return Number.isInteger(a);
+
+}
+console.log(perfectSquare(3));
+console.log(perfectSquare(4));
