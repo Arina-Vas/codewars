@@ -4,3 +4,8 @@
 
 // Solution:
 
+function makeUpperCase(str) {
+    str = str.toUpperCase(str);
+    return str;
+}
+console.log(makeUpperCase("dffog gtmegeg tiegge"));
