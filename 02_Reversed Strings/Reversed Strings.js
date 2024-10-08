@@ -7,12 +7,22 @@
 // 'word'   =>  'drow'
 
 // Solution:
+// function solution(str) {
+//     var splitString = str.split("");
+//     var reverseArray = splitString.reverse();
+//     var joinArray = reverseArray.join("");
+//     return joinArray;
+// }
+
+// solution("world");
+// solution("word");
+
 function solution(str) {
-    var splitString = str.split(""); 
-    var reverseArray = splitString.reverse(); 
-    var joinArray = reverseArray.join("");
-    return joinArray; 
+    let strReverse = [];
+    for (let i = 0; i < str.length; i++) {
+        strReverse.unshift(str[i])
+    }
+    return strReverse.join("")
 }
- 
-solution("world");
-solution("word");
+console.log(solution("world"));
+console.log(solution("word"));
