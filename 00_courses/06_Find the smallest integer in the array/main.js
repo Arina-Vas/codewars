@@ -8,3 +8,14 @@
 // You can assume, for the purpose of this kata, that the supplied array will not be empty.
 
 // Solution:
+function findSmallestInt(arr) {
+    let min = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i]
+        }
+    }
+    return min;
+}
+
+console.log(findSmallestInt([78,56,232,12,8]));
