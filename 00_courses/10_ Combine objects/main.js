@@ -32,15 +32,30 @@ const objB = { a: 3, c: 6, d: 3 }
 const objC = { a: 5, d: 11, e: 8 }
 const objD = { c: 3 }
 
-function combine(...arguments) {
-    const objectsArray = Array.from(arguments);
+// function combine(...arguments) {
+//     const objectsArray = Array.from(arguments);
+//     const objResult = {};
+//     for (let i = 0; i < objectsArray.length; i++) {
+//         for (let key in objectsArray[i]) {
+//             if (key in objResult) {
+//                 objResult[key] += objectsArray[i][key]
+//             } else {
+//                 objResult[key] = objectsArray[i][key];
+//             }
+//         }
+//     }
+//     return objResult;
+// }
+// console.log(combine(objA, objB, objC, objD));
+
+function combine() {
     const objResult = {};
-    for (let i = 0; i < objectsArray.length; i++) {
-        for (let key in objectsArray[i]) {
+    for (let i = 0; i < arguments.length; i++) {
+        for (let key in arguments[i]) {
             if (key in objResult) {
-                objResult[key] += objectsArray[i][key]
+                objResult[key] += arguments[i][key]
             } else {
-                objResult[key] = objectsArray[i][key];
+                objResult[key] = arguments[i][key];
             }
         }
     }
