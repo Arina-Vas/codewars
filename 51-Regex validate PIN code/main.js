@@ -22,6 +22,20 @@ for (let i = 0; i < pin.length; i++) {
 }
 return true;
 }
+
+// function validatePIN (pin) {
+//   let num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+//   let count = 0;
+//   let pinArr = pin.split('');
+//   for (let i = 0; i < pinArr.length; i++) {
+//     if (num.includes(pinArr[i])) {
+//       count += 1;
+//     } else {
+//       return false;
+//     }
+//   }
+//   return count == 4 || count == 6;
+// }
 console.log(validatePIN("a234"));
 console.log(validatePIN("1"));
 console.log(validatePIN("-1.234"));
