@@ -41,35 +41,51 @@
 
 // Solution:
 
-const whosOnline = (friends) => {
-    const online = [];
-    const offline = [];
-    const away = [];
+// const whosOnline = (friends) => {
+//     const online = [];
+//     const offline = [];
+//     const away = [];
 
-    friends.map((x) => x.status === 'online' && x.lastActivity < 11 ? online.push(x.username) : x.status === 'offline' ? offline.push(x.username) : x.status === 'online' && x.lastActivity > 10 ? away.push(x.username) : [])
-// x - временная переменная для мап, мап заменяет перебор элеметов массива, т.е. применяется сразу ко всему массиву, после стрелки пишем, что нужно сделать, в данном случае провести проверку(if, else) с помощью тернарного оператора и добавить соответсвующие значения в массив; если мы ничего не добавили, то массив д.б. пустым, поэтому [] в конце. Можжно использовать обычную конструкцию иф элсе
-    // for (let key in friends) {
-    //     if (friends.status === "online") {
-    //         for (let act in friends) {
-    //             if (friends.lastActivity < 11) {
-    //                 online.push(friends[key]);
-    //             } else away.push(friends[key])
-    //         }
-    //     } else if (friends[key] === "offline") {
-    //         offline.push(friends[key])
-    //     }
-    // }
-    if (online.length > 0 && offline.length > 0 && away.length > 0) {
-        return { online, offline, away }
+//     friends.map((x) => x.status === 'online' && x.lastActivity < 11 ? online.push(x.username) : x.status === 'offline' ? offline.push(x.username) : x.status === 'online' && x.lastActivity > 10 ? away.push(x.username) : [])
+// // x - временная переменная для мап, мап заменяет перебор элеметов массива, т.е. применяется сразу ко всему массиву, после стрелки пишем, что нужно сделать, в данном случае провести проверку(if, else) с помощью тернарного оператора и добавить соответсвующие значения в массив; если мы ничего не добавили, то массив д.б. пустым, поэтому [] в конце. Можжно использовать обычную конструкцию иф элсе
+//     // for (let key in friends) {
+//     //     if (friends.status === "online") {
+//     //         for (let act in friends) {
+//     //             if (friends.lastActivity < 11) {
+//     //                 online.push(friends[key]);
+//     //             } else away.push(friends[key])
+//     //         }
+//     //     } else if (friends[key] === "offline") {
+//     //         offline.push(friends[key])
+//     //     }
+//     // }
+//     if (online.length > 0 && offline.length > 0 && away.length > 0) {
+//         return { online, offline, away }
+//     }
+//     if (online.length > 0 && away.length > 0) {
+//         return { online, away }
+//     }
+//     if (online.length > 0 && offline.length > 0) {
+//         return { online, offline }
+//     }
+//     if (offline.length > 0 && away.length > 0) {
+//         return { offline, away }
+//     }
+//     return {}
+// }
+
+
+const whosOnline = (friends) => {
+    const result = {};
+    if (!friends.length) {
+        return result;
     }
-    if (online.length > 0 && away.length > 0) {
-        return { online, away }
+    else {
+        for (let i = 0; i < friends.length; i++) {
+            if (friends[i].status === "offline") {
+                result.offline = [];
+                result.offline.push
+            }
+        }
     }
-    if (online.length > 0 && offline.length > 0) {
-        return { online, offline }
-    }
-    if (offline.length > 0 && away.length > 0) {
-        return { offline, away }
-    }
-    return {}
 }
