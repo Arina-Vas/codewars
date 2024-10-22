@@ -67,11 +67,8 @@
 
 function SeriesSum(n) {
     let result = 0;
-    if (n === 1) {
-        return "1.00";
-    }
-    else if (n === 0) {
-        return "0.00";
+    if (n === 1 || n === 0) {
+        return `${n}.00`;
     }
     else {
         let a = 1;
@@ -81,7 +78,6 @@ function SeriesSum(n) {
         }
     }
     return result.toFixed(2).toString();
-
 }
 console.log(SeriesSum(2));
 console.log(SeriesSum(3));
