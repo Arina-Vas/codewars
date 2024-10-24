@@ -16,10 +16,11 @@ function sumEvenNumbers(input) {
     //     return Number.isInteger(i)
     // });
     let sumArr = input.filter((i) => (i % 2) === 0);
-    let sum = 0;
-    for (let i = 0; i < sumArr.length; i++) {
-        sum += sumArr[i]
-    }
+    let sum = sumArr.reduce((acc, x) => acc + x);
+    // let sum = 0;
+    // for (let i = 0; i < sumArr.length; i++) {
+    //     sum += sumArr[i]
+    // }
 
     return sum;
 }
