@@ -13,22 +13,34 @@
 // Solution
 
 function basicOp(operation, value1, value2) {
-    let result;
+    // let result;
+    // switch (operation) {
+    //     case "+":
+    //         result = value1 + value2;
+    //         break;
+    //     case "-":
+    //         result = value1 - value2;
+    //         break;
+    //     case "*":
+    //         result = value1 * value2;
+    //         break;
+    //     case "/":
+    //         result = value1 / value2;
+    //         break;
+    // }
+    // return result;
+
     switch (operation) {
         case "+":
-            result = value1 + value2;
-            break;
+            return value1 + value2;
         case "-":
-            result = value1 - value2;
-            break;
+            return value1 - value2;
         case "*":
-            result = value1 * value2;
-            break;
+            return value1 * value2;
         case "/":
-            result = value1 / value2;
-            break;
+            return value1 / value2;
+        default: return 0;
     }
-    return result;
 
     // if (operation === '+') {
     //     return value1 + value2
